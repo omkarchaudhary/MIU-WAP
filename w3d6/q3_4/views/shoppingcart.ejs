@@ -1,0 +1,22 @@
+<%- include('./header.ejs') %>
+</head>
+<body>
+<%- include('./navigation.ejs') %>
+<main>
+<div style="margin-right: 15%; margin-left: 15%; margin-top: 2%;">
+        <% product.forEach((item) => { %>
+            <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                <div>
+                    <img src="<%= item.imageUrl %>" alt="Product" height="200px" width="200px" >
+                </div>
+                <div>
+                    <p>Name : <%= item.name %></p>
+                    <p>Price : <%= item.price %></p>
+                    <p>Description : <%= item.description %></p>
+                    <p>Id : <%= item.id %></p>
+                </div>
+            </div>
+        <% }); %>
+</div>
+</main>
+<%- include('./footer.ejs') %>
