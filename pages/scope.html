@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/closure.js" ></script>
+</head>
+<body>
+    <div style="background-color: gray; padding:5%; margin: 5%;">
+        <p>1. What is the output is of the following JavaScript (without running it)</p>
+    <pre>
+        <code>
+            x=1;
+            var a = 5;
+            var b = 10;
+            var c = function(a,b,c){
+                console.log("1. "+x);
+                console.log("2. "+a);
+                var f = function(a,b,c){
+                    b=a;
+                    console.log("3. "+b);
+                    b =c;
+                    varx = 5;
+                }
+                f(a,b,c);
+                console.log("4. "+b);
+                var x =10;
+            }
+            c(8,9,10);
+            console.log("5. "+b);
+            console.log("6. "+x);
+        </code>
+    </pre>
+    <p> Ans. undefined, 8, 8, 9, 10, 1</p>
+    <p>2. Define Global Scope and Local Scope in JavaScript</p>
+    <p> Ans. <strong>Global Scope :</strong>The variable which can be accessed from any part of the code.</p>
+    <p> <strong>Local Scope:</strong>The variable which can be accessed within a function where it is declared.</p>
+    <p>3. Consider the following JavaScript code:</p>
+    <pre>
+        <code>
+            //Scope A
+            function xFunc(){
+                //Scope B
+                function yFunc(){
+                    //Scope C
+                }
+            }
+        </code>
+    </pre>
+    <p>a. Do statements in Scope A have access to variables defined in Scope B and C? : No</p>
+    <p>b. Do statements in Scope B have access to variables defined in Scope A? : Yes </p>
+    <p>c. Do statements in Scope B have access to variables defined in Scope C? : No</p>
+    <p>d. Do statements in Scope C have access to variables defined in Scope A? : Yes</p>
+    <p>e. Do statements in Scope C have access to variables defined in Scope B? : Yes</p>
+    <p>4. What is the output is of the following JavaScript (without running it)</p>
+    <pre>
+        <code>
+            var x = 9;
+            function myFunction(){
+                return x*x;
+            }
+            console.log(myFunction());
+            x =5;
+            console.log(myFunction());
+        </code>
+    </pre>
+    <p>Ans. 81, 25</p>
+    <p>5. What is the output of the following alert (without running it)</p>
+    <pre>
+        <code>
+            var foo =1;
+            function bar(){
+                if(!foo){
+                    var foo =10;
+                }
+                alert(foo);
+            }
+            bar();
+        </code>
+    </pre>
+    <p>Ans. 10 </p>
+    </div>
+</body>
+</html>

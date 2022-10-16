@@ -63,6 +63,8 @@ app.get('/cart', (req,res)=>{
         //res.locals.items=req.session.items + req.session.items.length ;
         res.locals.items=req.session.items;
         cartCount = req.session.items.length;
+    }else{
+        res.locals.items =[];
     }
     res.locals.n = cartCount;
     res.render('cart');

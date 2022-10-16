@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link href="../css/productform.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header">
+        <div class="first">
+            <div class="logo">
+              <div>MUM Golden Dome Market : : : SRM System</div>
+            </div>
+            <div class="menu-item">
+              <div>Products</div>
+            </div>
+  
+            <div class="menu-item">
+              <div>Suppliers</div>
+            </div>
+          </div>
+  
+          <div class="second">
+            <div class="sign-out">
+              <div>Hello!</div>
+            </div>
+  
+            <div class="sign-out">
+              <button class="btn">Sign Out</button>
+            </div>
+          </div>
+    </div>
+    <div class="product-form">
+        <h1>New Product Form</h1>
+        <form method="post" action="#">
+            <div class="container">
+                <div>
+                    <div class="productNumber">
+                        <label for="productNumber" id="label">Product Number</label><br>
+                        <input type="text" id="productNumber" name="productNumber" />
+                    </div>
+                    <div class="name">
+                        <label for="name" id="label">Name</label><br>
+                        <input type="text" id="name" name="name"/>
+                    </div>
+                    <div class="price">
+                        <label for="price" id="label">Unit Price</label><br>
+                        <input type="text" id="price" name="price" placeholder="0.0"/>
+                    </div>
+                </div>
+                <div>
+                    <div class="quantity">
+                        <label for="quantity" id="label">Quantity in stock</label><br>
+                        <input type="text" id="quantity" name="quantity"  placeholder="0"/>
+                    </div>
+                    <div class="supplier">
+                        <label for="supplier" id="label">Supplier:</label><br>
+                        <select id="supplier" name="supplier">
+                            <option value="0" selected>Select a supplier</option>
+                            <option value="1">Supplier1</option>
+                        </select>
+                    </div>
+                    <div class="date">
+                        <label for="date" id="label">Date Supplied</label><br>
+                        <input type="text" id="date" name="date" placeholder="yyyy-mm-dd"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="submitBtn">
+                <input type="submit" id="submitBtn" value="Add Product" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>

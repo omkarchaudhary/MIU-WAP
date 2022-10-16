@@ -1,0 +1,15 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: aliceblue;
+}
+
+.container{
+    margin: 0% 10% 0% 10%;
+}
+.developer-tool{
+    background-color: gray;
+}
+.code-section{
+    background-color: antiquewhite;
+}

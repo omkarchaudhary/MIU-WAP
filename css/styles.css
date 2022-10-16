@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: darkgrey;
+}
+body .coverImage{
+    background-image: url(../images/profilebg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 10%;
+
+}
+body img{
+    border-radius: 120px;
+    position: relative;
+    top: 10vh;
+    left: 4vw;
+}
+h2{
+    margin-left: 2%;
+}
+ul{
+    margin-left: 2%;
+}

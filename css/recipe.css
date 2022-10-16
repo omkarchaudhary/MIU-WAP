@@ -1,0 +1,47 @@
+body{
+    margin: 2% 15% 2% 15%;
+    color: #404040;
+    background-color: white;
+    font-family: Georgia, serif;
+    font-size: 11pt;
+}
+#header{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    padding-left: 20%;
+    font-family: Lucida Sans Unicode, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+h2{
+    color: #A4A400;
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    font-family: Lucida Sans Unicode, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+a{
+    color: #A4A400;
+}
+#comments{
+    background-color: rgb(243, 238, 180);
+    font-style: italic;
+    list-style-type: none;
+}
+
+abbr{
+    text-decoration: underline;
+}
+li span{
+    font-weight: bold;
+}
+p>span{
+    text-decoration: line-through;
+}
+#pie{
+    margin: 3% 0 2% 0;
+}
+#pie li{
+    list-style-type: none;
+}

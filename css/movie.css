@@ -1,0 +1,70 @@
+body{
+    background-image: url("../images/movieImages/background.png");
+    padding: 0%;
+    margin: 0%;
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.banner{  
+    background-image: url("../images/movieImages/bannerbg.png");   
+}
+
+.banner img{
+    margin-left: 20%;
+}
+h1{
+    padding: 0% 40% 0% 40%;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+}
+.innerHeader {
+    background-image: url("../images/movieImages/rbg.png");
+    height: 10%;
+  }
+  .innerHeader .content {
+    display: flex;
+    align-items: center;
+  }
+
+  .innerHeader .content > span {
+    font-size: 46px;
+    font-weight: 700;
+    color: red;
+  }
+#innerBox{
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 2%;
+    padding: 1%;
+    background-color: #E8DC9B;
+    font-weight: bold;
+}
+.mainBox{
+    border:2px solid gray;
+    margin: 0% 10% 0% 10%;
+    height: 1075px;
+    border-radius: 10pt;
+}
+.generalReview{
+    background-color: #a2b964;
+    width: 250px;
+    float: right;
+    /* height: 400px; */
+}
+dl{
+    padding: 5%;
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin-bottom: 10pt;
+}
+.reviewer{
+    margin: 0% 0% 5% 2%;
+    font-style: italic;
+}
+  
+  
