@@ -1,0 +1,22 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="HTML,CSS" >
+    <meta name="descrption" content="this page is about web development" >
+    <title>study</title>
+    <link href="images/happy.jpg" type="image" rel="shortcut icon" >
+    <link href="study.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Bonjour!!</h1>
+    <p>J'mappelle Mahlet</p>
+    <img src="images/happy.jpg" title="desta">
+    <p2>Je suis contante <br><a href="www.google">Google</a></p2>
+    <hr> 
+
+</body>
+</html>

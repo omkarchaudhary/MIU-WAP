@@ -1,0 +1,61 @@
+May 9 
+classes demo
+
+
+class Car{
+    //let _speed is the variable name
+    //constructor
+    constructor(x=50){
+        this.speed=x;
+    }
+    //getter
+    get speed(){
+    return this._speed;
+    }
+    //setter
+    set speed(y) {
+        this._speed=y;
+    }
+    //function
+    printName(){
+        console.log(c1.speed);
+    }
+    setName(){
+        this._speed="something";
+    }
+    static fuelType(){
+        return "Gas";
+    }
+}
+
+//inheritance
+class bmw extends Car{
+    constructor(speed,model){
+        super(speed=350);
+        this.model=model;
+    }
+    set model(model){
+        this._model=model;
+    }
+    get model(){
+       return this._model;
+    }
+
+    fuelType(){
+        return super.fuelType() + " & " + "Hybrid";
+    }
+}
+
+
+let c1= new Car(500);
+let b1= new bmw(150, "1234");
+console.log(c1._speed);
+//refers to the setter method
+c1.speed=40;
+// c1.printName();
+// c1.setName();
+console.log(b1.speed+ ", " + b1.model);
+// console.log(b1.fuelType());
+console.log(typeof Car);
+console.log(c1 instanceof Car)
+console.log(c1)

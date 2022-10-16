@@ -1,0 +1,17 @@
+
+[{
+    "cpu": "intel",
+    "Ram": "16Gb",
+    "Storage": "500GB",
+    "Price":"700$"}, 
+
+ {  "cpu": "AMD",
+    "Ram": "8Gb",
+    "Storage": "540GB",
+    "Price":"800$"},
+{
+    "cpu": "Amd",
+    "Ram": "32Gb",
+    "Storage": "1000GB",
+    "Price":"2000$"}
+]

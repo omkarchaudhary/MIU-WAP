@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "weekend"
+		},
+		{
+			"path": "part II quizes"
+		},
+		{
+			"path": "newDemo"
+		},
+		{
+			"path": "my class demos part II"
+		},
+		{
+			"path": "final quiz practice"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "final quiz practice"
+	}
+}

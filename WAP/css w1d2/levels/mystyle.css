@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+h1,p,a{
+    background-color: cadetblue;
+}
+a{
+    background-color: darkgrey;
+}
+.text1{
+    background-color: mediumturquoise;
+}
+.text2{
+    background-color: bisque;
+}
+#different{
+    background-color: yellowgreen;
+}
+:link{
+    background-color: salmon;
+}

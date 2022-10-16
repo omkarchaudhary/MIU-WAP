@@ -1,0 +1,31 @@
+npm: node project manager
+
+npm install --save express
+node file name.js
+
+'/' : homepage
+
+const express = require("express");
+const app = express();
+app.use("/", (req, res ,next)=> {
+    console.log(`serving static page`);
+    res.send("<p>This is my static response</p>");
+});
+
+app.get('/hello', (req, res, next)=>{
+    res.redirect(path.join(__dirname, "/", "index.html"));
+});
+
+app.use("/red", (req, res, next)=> {
+    //do with parameters.....
+    res.redirect("https:www.google.com");
+});
+
+app.post('/red', (req,res, next)=>{
+    res.redirect("/hello");
+});
+
+const port= 3000;
+app.listen(port, ()=> {
+    console.log(`Running server on port ${port}`);
+});

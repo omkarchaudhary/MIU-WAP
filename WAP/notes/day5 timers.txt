@@ -1,0 +1,58 @@
+day5
+timers
+1. setTimeout()
+2. setInterval()
+
+1.
+let myBomb;
+window.onload= function(){
+   myBomb=  setTimeout( explode, 2000);
+   document.getElementById("myButton").onclick=stopBomb;
+}
+
+function stopBomb(){
+    clearTimeout(myBomb);
+    alert("not today!");
+}
+function explode(){
+    alert("BOOM!");
+}
+------------------------------------------------------
+when the funtion has parameters
+let myBomb;
+
+window.onload= function(){
+    myBomb=  setTimeout( explode, 2000, 5,6);
+   document.getElementById("myButton").onclick=stopBomb;
+}
+
+function stopBomb(){
+    clearTimeout(myBomb);
+    alert("not today!");
+}
+function explode(x,y){
+    // alert("BOOM! X " + (x+y));
+
+    alert( x+y);
+    // return x+y;
+}
+-------------------------------------------------------------
+2.setInterval
+
+let myBomb;
+let x=0;
+window.onload= function(){
+    myBomb=  setInterval( explode, 2000, 5);
+   document.getElementById("myButton").onclick=stopBomb;
+}
+
+function stopBomb(){
+    clearInterval(myBomb);
+    alert("not today!");
+}
+function explode(y){
+    // alert("BOOM! X " + (x+y));
+    x+=y;
+    alert( x);
+    // return x+y;
+}

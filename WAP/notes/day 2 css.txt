@@ -1,0 +1,147 @@
+WAP W1D2
+
+p{
+    font-family: cursive;
+    font-size: 24pt;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: left;
+    text-decoration: dotted;
+    text-indent:20pt;
+    line-height: 20pt;
+    letter-spacing: 0.5pt;
+    word-spacing: 1pt;
+    text-overflow: clip;
+    background-image: url("images/linkpic.jpg");
+    background-position: 250;
+    background-repeat: no-repeat ;
+    background-attachment: scroll ;
+    background-size: cover;
+}
+-----------------------------------------------------------------------------------
+LEVELING
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link href="mystyle.css" rel="stylesheet">
+</head>
+<body>
+    <h1>DAISY</h1>
+<!-- <p>cest la vie!
+    <a href="google.com">google</a>
+
+</p> -->
+
+<p class="text1">
+this is text 1
+</p>
+
+<p class="text1">
+    this is text 2
+</p>
+<p class="text2" id="different">
+    this is text 3
+    </p>
+<p class="text2">
+    this is text 4
+     <!-- active links -->
+    <a href="http://www.google.com">Google it!!!</a> 
+    </p>
+</body>
+</html>
+CSS
+body{
+    background-color: teal;
+}
+a{
+    background-color:aquamarine;
+}
+h1,p>a{
+background-color: azure;
+}
+a{
+    background-color: darkgoldenrod;
+}
+.text1{
+    background-color: coral;
+}
+.text2{
+    background-color: cyan;
+}
+/* the id style has priority ove the class style */
+#first{
+    background-color: aliceblue;
+}
+/* to refer to a psuedo class  */
+:link{
+    background-color: darkgray;
+}
+
+/* browser :default
+external
+internal
+inline */
+---------------------------------------------------------------------
+styling section
+<body>
+    <div id="nav">
+        <span>Home</span>
+        <span>contact us</span>
+        <span>aboutus</span>
+    </div>
+    <div id="side"> 
+        <span>legal</span>
+        <span>financial</span>
+        <span>economical</span>
+    </div>
+</body>
+
+css
+#nav{
+    background-color: bisque;
+}
+#nav>span{
+background-color: aquamarine;
+}
+#side{
+    background-color: black;
+}
+#side>span{
+    background-color: hotpink;
+}
+-----------------------------------------------------------------------------
+inline and block element
+ <div id="boxExample">
+some content    
+<span id="target">this is an inline span</span>
+<span>this is another span</span>
+</div>
+
+css
+#boxExample{
+   border-style: solid;
+   width: 300%;
+   padding: 2%;
+   border-top-right-radius: 20%;
+   border-bottom-left-radius: 20%;
+   vertical-align: sub;
+   margin: auto;
+   display: inline-block;
+   column-count: 3;
+ 
+
+}
+#boxExample > span{
+    position: fixed;
+    padding: 50%;
+    vertical-align: sub; 
+    background-color: darkorange;  
+}
+#target{
+    z-index: 1;
+}

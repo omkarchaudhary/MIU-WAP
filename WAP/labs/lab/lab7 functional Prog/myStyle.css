@@ -1,0 +1,7 @@
+#boxExample{
+    border-style: solid;
+    border-color: bisque;
+    width: fit content;
+    text-align: center;
+    display: inline-block;
+}

@@ -1,0 +1,40 @@
+AJAX
+
+
+function callAjax(){
+    $.ajax( '/text.txt',{
+        'type' : 'GET',
+    }).done(onSuccess).fail(onFail);
+
+}
+
+function onSuccess(data){
+console.log(data);
+$('#b')[0].append(data);
+}
+function onFail(xhr, status, exception){
+    console.log(exception);
+}
+
+$(function(){
+    $('#b').click(callAjax);
+
+});
+
+simplified
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+let url='http://www.google.com/search';
+let data={'q': 'catz'};
+function callAjax(){
+    $.get( url,{data}).done(onSuccess).fail(onFail);
+
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+function callAjax(){
+    let url='http://www.google.com/search';
+    let data={'q': $('#myText')[0].value};
+    $.get( url,{data}).done(onSuccess).fail(onFail);
+
+}

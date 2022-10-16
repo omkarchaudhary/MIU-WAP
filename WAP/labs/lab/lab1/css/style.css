@@ -1,0 +1,23 @@
+body{
+    font-family: Verdana;
+}*{
+    margin: 5;
+    padding: 5;
+}
+header,footer{
+    position: absolute;
+    background-color: seashell;
+    width: 100%;
+    color: black;
+}
+header{
+    height: 10vh;
+    left: 15%;
+}
+footer{
+    height: 5vh;
+    bottom: 0px;
+}
+/* #text-color {
+    background-color: seashell;
+    } */

@@ -1,0 +1,50 @@
+FINAL REVIEW 
+
+FIRST PART —> CLASSES
+- [ ] Getters and setters actual functions 
+- [ ] How to create a class
+- [ ] How to inherit from other classes
+- [ ] Make objects with classes
+- [ ] Constructors
+- [ ] Static methods and variables
+
+SECOND PART — JQUERY
+- [ ] Switch classes on html 
+- [ ] Manipulate objects on html
+- [ ] Handle events with jquery 
+- [ ] Be able to navigate through DOM 
+
+THIRD PART —> NODE JS
+- [ ] Import,  export and use  modules   -> more than two modules put them in the object
+
+FOURTH PART —> EXPRESS
+- [ ] Create routes
+- [ ] Create a running servers
+- [ ] Handle request GET&POST 
+- [ ] Handle request parameters
+- [ ] Send the file — response
+- [ ] Redirect — response
+
+FIFTH PART —> TEMPLATES
+- [ ] Create ejs pages
+- [ ] Send ejs pages to the users
+- [ ] Send parameters to ejs page
+
+SIXTH PART —>COOKIE AND SESSION
+- [ ] Create & use them
+- [ ] Persistence cookie
+- session
+
+LAST PART —> JSON AND AJAX
+JSON
+- [ ] Turn a string to json & json to string
+AJAX
+- [ ] Post & get 
+- [ ] Fetch
+- [ ] Using data from the page as parameters and send them to the server
+
+json
+{x:
+y:
+}
+-"x=" + "y=" +...to change json into fetch

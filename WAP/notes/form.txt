@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="form.js"></script> -->
+    <script defer src="./dom.js"></script>
+  
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <h1> My example HTML Form</h1>
+        <form method="get" action="formprocessor.html">
+            <fieldset>
+                <legend> Student Information</legend>
+                <div>
+                    <input type="hidden" name="data_id" value="20">
+                </div>
+            <div>
+                <label for="studentId">
+                       Student ID
+                </label>
+            </div>
+            <div>
+                <input autofocus name="studentId" id="studentId" type="text" required placeholder="studentId" size="8" maxlength="9"> 
+   
+            </div>
+
+            <div>
+                <label for="fullName"> Full Name</label>
+            </div>
+            <div>
+                <input name="fullName" id="fullName" type="text"required placeholder="full Name"> 
+            </div>
+
+             <div>
+                 <label for="phoneNum" > Phone Number</label>
+              
+             </div>
+             
+                     <div>
+                   <input type="tel" name="phoneNum" id="phoneNum" pattern="[0-9]*" placeholder="xxx-xxx-xxx" title="must be numbers">
+            
+                             </div>
+                             <div>
+                                 <label for="emailId"> Email <Address></Address></label>
+                             </div>
+
+                             <div>
+                                 <input type="email" id="
+                                 emailId" pattern="^[a-zA-Z_-]+@[a-zA-Z_-]+\.[a-zA-Z]{2,3}$" title="Match the provided format">
+                             </div>
+
+            <div>
+                <label for="desc"> About me</label>
+            </div>
+            <div>
+
+            <textarea name="desc" id="desc" required cols="40" rows="10"></textarea>
+        </div>
+        </fieldset>
+
+        <fieldset>
+<legend> Education background</legend>
+       
+            <div>
+                Favourite courses:
+            </div>
+                <label for="favcourses1">
+                    <input type="checkbox" name="favcourses1" id="favcourses1">SE
+                </label>
+            </div>
+            <div>
+                <label for="favcourses2" >
+                    <input type="checkbox" name="favcourses2" id="favcourses2" checked>EA
+                </label>
+            </div>
+            <div> 
+                <label for="favcourses3">
+                    <input type="checkbox" name="favcourses3" id="favcourses3">SA
+                </label>
+            </div>
+            <div>
+                <label for="favcourses4"> 
+                    <input type="checkbox" name="favcourses4" id="favcourses4">MWA
+                </label>
+            </div>
+            <div> Level of study:</div>
+            <div>
+                <label for="level1">
+                    <input type="radio" name="level1" id="level1">Graduate
+                </label>
+            </div>
+            <div>
+                <label for="level2">
+                    <input type="radio" name="level2" id="level2">UnderGrad
+                </label>
+            </div>
+            <div>
+                <label for="semester">semester</label>
+            </div>
+            <div>
+                <select name="semester" id="semester" size="2" >
+                    <optgroup label="First">
+                    <option value="spring"> Spring</option>
+                    <option value="summer"> Summer</option>
+                </optgroup>
+                <optgroup label="second">
+                    <option value="fall"> Fall</option>
+                    <option value="Winter"> Winter</option>
+                </optgroup>
+                </select>
+            </div>
+        </fieldset>
+            <div>
+       <input type="submit" value="SUBMIT">
+       <input type="reset" value="Reset"> 
+            </div> 
+        </form>
+    </main> 
+  
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+\d [0-9] only digits
+\D [a-zA-Z!@#$%^&*() ] anything But 0=9
+\w [a-zA-Z] anyword
+\W [0-9!@#$%^&*() ] anything But letters
+\s [ ] space
+\S [] no space
+. wildcard
+{from-to} range
+^ starts with
+$ ends with
++ and
+| or
+
+Quiz 7 answer 
+/^(\+1)?+(\s)?+(\d{3}\s+\d{3}\s+\d{4})|(\d{3}+\d{3}+\d{4})
+
+
+
+^\d{3}+\w{2,6}+\s$    like 234more 
+23m doen't work 123456more works to make it more specific
+^\d{3}+[a-zA-Z]{2,6}+\s$
+
+quiz 7
+/^(\+1)?+(\s)?+(\d{3}\s+\d{3}\s+\d{4})|(\d{3}+\d{3}+\d{4})

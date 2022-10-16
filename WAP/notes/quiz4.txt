@@ -1,0 +1,70 @@
+//anonymos
+(function(){
+    console.log("this is anonymos function")
+})
+ 
+//shortest,
+function shortest(arr=[]){
+        let min=arr[0];
+        let count=0;
+    for(let i=1; i<arr.length; i++){
+            if(arr[i].length<min.length){
+                count=i;
+                min=arr[i];
+            }
+    } 
+    return min; 
+        }
+    console.log(shortest(["hello","z","bye"]));
+
+//grid
+<body>
+    <div id="container">
+        <div id="s">some</div>
+        <div id="t">text</div>
+        <div id="h">here</div>
+        <div id="z">there</div>
+        
+        </div>
+</body>
+css
+#container{
+    border-style: solid;
+    border-width: 0px ;
+    border-color: black;
+    display: grid;
+    margin: 3%;
+    grid-template-areas: 
+    's s t t t t t'
+    's s t t t t t'
+    's s h h h z z'
+    's s h h h z z'
+    ;
+    }
+    
+    #container>div{
+        border-style:solid ;
+        border-width: 0px;
+        border-color: black;
+        padding: 10%;
+    }
+    
+    #s{
+        grid-area: s;
+        background-color: darkgray;
+    }
+    #t{
+        grid-area: t;
+    background-color: gray;
+    }
+    #h{
+        grid-area: h;
+    background-color:lightgrey;
+    }
+    #z{
+        grid-area: z;
+        background-color:darkgray;
+    }
+
+
+   

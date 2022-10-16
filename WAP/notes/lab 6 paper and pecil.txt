@@ -1,0 +1,46 @@
+ #1 Output
+
+undefined - in line 5 x is undefined inside the function c
+
+8 - the value of a is 8
+
+8 - since a is assigned to b (a=b;) b becomes 8
+
+9 - the value of b is 9
+
+10 - the value of b is initially 10 (outside of the c function)
+
+1 - the value of x is initially 1 (outside of the c function)
+
+#2
+
+Global scope: refers to anything declared outside of a block of code.
+
+Variables created without a const, let or var keyword are always globally scoped.  Even if it’s in a block or inside a function is available everywhere.
+
+Local scope: refers to anything declared inside a block of code. it's not available outside of the block it's declared.
+
+#3
+
+a) No
+
+b) No
+
+c) No
+
+d) No
+
+e) No
+
+#4
+
+81
+
+25
+
+#5
+
+10
+
+
+

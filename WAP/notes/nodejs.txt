@@ -1,0 +1,61 @@
+NodeJs
+
+demo 1
+
+class Car{
+    make;
+    model;
+    constructor(make,model){
+        this.make=make;
+        this.model=model;
+    }
+    getMake(){
+        return this.make;
+    }
+    getModel(){
+        return this.model;
+    }
+
+}
+let tesla =new Car("tesla", "model 3");
+console.log("This is " + tesla.getMake()+ "model: " +tesla.getModel());
+............................................................................
+............myClasses.js
+
+let c=class Car{
+    make;
+    model;
+    constructor(make,model){
+        this.make=make;
+        this.model=model;
+    }
+    getMake(){
+        return this.make;
+    }
+    getModel(){
+        return this.model;
+    }
+
+}
+
+let y=55;
+
+let myObj={
+    myCar:c,
+    myY:y,
+    myF:function(){
+        return "This is my function."
+    }
+}
+
+module.exports= myObj;
+
+...........TEST.JS
+
+const valueOfX= require('./myClasses');
+console.log(valueOfX.myF());
+
+let tesla =new valueOfX.myCar("tesla", "model 3");
+console.log("This is " + tesla.getMake()+ ", " + tesla.getModel());
+
+

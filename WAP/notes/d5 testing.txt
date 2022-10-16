@@ -1,0 +1,55 @@
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script> -->
+    <script>
+      mocha.setup('bdd'); // minimal setup
+    </script>
+    <!-- add chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+     </script>
+        <script src="d5testing.js"></script>
+------------------------------------------------------------
+after buttons div
+          <div id="mocha"></div>
+
+-------------------------------------------------------------
+JS
+
+window.onload= function(){
+    tester();
+}
+
+function tester(){
+    describe("sum", function(){
+        it("returns the sum of 10 and 5.",function(){
+            assert.equal(sum(10,5),15);
+        });
+        it("returns the sum of 5 and 6.",function(){
+            assert.equal(sum(5,6),11);
+        });
+        it("returns the sum of 3 and 78.",function(){
+            assert.equal(sum(3,78),81);
+        });
+        it("returns the sum of 10 and '5'.",function(){
+            assert.isNaN(sum(10,'5'),15);
+        });
+                 
+    });
+
+    describe("subtract", function(){
+        it("subtracts 5 from 10 and returns the result", function(){
+            assert.isNaN(subtract(5,10), 5);
+        });
+    });
+    mocha.run();
+}
+
+ function sum(x,y){
+     return (x+y);
+    //  console.log(x+y);
+ }
+ function subtract(x,y){
+    //  return (x-y);
+     return "mahi";
+ }

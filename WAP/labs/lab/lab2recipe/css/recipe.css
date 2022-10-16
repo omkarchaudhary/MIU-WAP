@@ -1,0 +1,85 @@
+body {
+    background-image: url(images/silverware.jpg);
+	background-repeat: repeat;
+	background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    font-family: 'Georgia';
+}
+
+h1,h2 { 
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', Arial, sans-serif;
+    text-decoration: underline;
+    letter-spacing: 0.2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18pt;
+    text-align: left;
+}
+
+a {
+    color: #A4A400 ;
+}
+
+#cake {
+    text-decoration: line-through;
+}
+
+.user {
+    padding-left: 40px; 
+    padding-right: 40px;
+}
+
+.user p {
+    font-style: italic;
+    background-color: #FFFFA8;   
+}
+
+ul {
+    list-style: url(images/pie_icon.gif);
+}
+
+.copywrite {
+    text-align: right;
+    position: absolute;
+}
+
+.links {
+    float: right;
+    position: relative;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+  }
+.strike {
+    text-decoration: line-through;
+  }
+  
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

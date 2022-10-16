@@ -1,0 +1,88 @@
+Day3 FLEX & GRID
+
+				FLEX-COTNTAINER
+html
+<body>
+    <div id="container">
+        <span>Span1</span>
+        <span>Span2</span>
+        <span>Span3</span>
+        <span>Span4</span>
+    </div>
+</body>
+
+CSS
+#container{
+border-style: double;
+display: flex;
+flex-direction: column;
+position: absolute;
+top: 20%;
+}
+span{
+    background-color: aqua;
+    border-style:solid ;
+    border-width: 4px;
+    border-color: red;
+    margin: 20px ;
+    text-align: center;
+}
+-------------------------------------------------------------------------------
+			GRID
+html
+<body>
+    <div id="container">
+     <div id="m">The menu bar</div>
+     <div id="s">The side bar</div>
+     <div id="n">The nav bar</div>
+     <div id="f">The footer</div>
+     <div id="b">Body
+        HISTORY, PURPOSE AND USAGE
+        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+     </div>
+
+</body>
+
+CSS
+#container{
+border-style: double;
+border-width: 5px ;
+border-color: black;
+display: grid;
+grid-template-areas: 
+'m m m m m m m'
+'s s b b b b n'
+'s s b b b b n'
+'s s b b b b n'
+'s s b b b b n'
+'s s f f f f n'
+;
+}
+
+#container>div{
+    border-style:double ;
+    border-width: 3px;
+    border-color: gold;
+    text-align: center;
+}
+
+#m{
+    grid-area: m;
+    background-color: aquamarine;
+}
+#s{
+    grid-area: s;
+background-color: brown;
+}
+#n{
+    grid-area: n;
+background-color: blue;
+}
+#f{
+    grid-area: f;
+    background-color: blueviolet;
+}
+#b{
+    grid-area: b;
+    background-color: chartreuse;
+}

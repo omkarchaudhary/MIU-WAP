@@ -1,0 +1,35 @@
+const express= require('express');
+const app= express();
+const path= require('path');
+// const bodyParser= require('body-parser');
+const session = require('express-session');
+
+app.use(session({
+    secret:'salt for cookie signin',
+}));
+
+session slide
+
+app.use((req,res,next)=>{
+    if(!req.session.views){
+        req.session.views={}; //put views object into session
+    }
+    //get the url pathname
+    var pathname= pth(req).pathname;
+    //count the views for the given url
+    req.session.views[pathname]=(req.session.views[pathname] || 0) + 1;
+    next();
+});
+
+app.get('/foo', (req,res,next)=>{
+    res.send('you viewed this page' + req.session.views['/foo']+ 'times');
+});
+
+app.get('/bar',(req,res,next)=>{
+    res.send('you viewed this page' + req.session.views['/bar']+ 'times')
+})
+app.get('/', (req,res)=>{
+    res.send("<a href='foo'>foo</a> <a href = 'bar'>bar</a>");
+});
+
+app.listen(3005);

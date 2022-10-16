@@ -1,0 +1,149 @@
+Week 3: lesson 2
+JQUERY
+
+Google CDN
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+SELECTORS
+basic: $(selector).action();
+
+$("d").firstChild();
+$("d").lastChild();
+$("d").childNode();
+$("d").children(); all children
+$("d").parent/parents();
+$("d").next(); the following siblings
+$("d").hide();
+$("d").append(); adds to the end
+$("d").prepend(); adds to the beginning
+$("d").();
+
+
+
+-----------------------------------------------------------------------
+demo1
+
+JS
+$(function(){
+    let myInput1 = $('<input>',{'type': 'button', 'id': 'but1', 'value': 'My button 1'}).click(myF);
+    let myInput2 = $('<input>',{'type': 'button', 'id': 'but2', 'value': 'My button 2'}).click(myF);
+    let myInput3 = $('<input>',{'type': 'button', 'id': 'but3', 'value': 'My button 3'}).click(myF);
+    let myInput4 = $('<input>',{'type': 'button', 'id': 'but4', 'value': 'My button 4'}).click(myF);
+
+    $('#m').append(myInput1);
+    $('#m').append(myInput2);
+    $('#m').append(myInput3);
+    $('#m').append(myInput4);
+    $('#m').click(inM);
+    $('#m').click(outOFM);
+
+
+    $('#but').each(function(i,x){
+        x.click= myF;
+    })
+    })
+
+
+// $(alert($('#m')[0].textContent));
+function inM(){
+     console.log("In M!!")
+}
+function myF(){
+console.log(this);
+// event.stopImmediatePropagation()
+}
+function outOFM(){
+    console.log("out of M!!")
+}
+
+.....................................................................................................
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link href="myStyle.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      mocha.setup('bdd'); // minimal setup
+    </script>
+      <!-- add chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+     </script>
+</head>
+<body>
+  
+    <div id="container">
+        <div id="m">The menu bar</div>
+        <div id="s">The side bar</div>
+        <div id="n">The nav bar</div>
+        <div id="f">The footer</div>
+        <div id="b">Body
+          <br><br>
+          <div id="theDiv">This is a text.</div>
+          <input id="myText" type="text" >
+          <input id="myButton" type="button" value="Click here ">
+          <form action="https://www.google.com">
+            <input type="text" placeholder="email" pattern="^[a-zA-Z_-]+@+[a-zA-Z_-]+\.[a-zA-Z]{2,3}$">
+            <input type="submit" value="Submit" >
+          </form>
+          <div id="mocha"></div>
+
+           <!-- HISTORY, PURPOSE AND USAGE
+           Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with: -->
+        </div>
+
+</body>
+</html>
+..................................................................................................
+CSS
+#container{
+    border-style: double;
+    border-width: 5px ;
+    border-color: black;
+    display: grid;
+    grid-template-areas: 
+    'm m m m m m m'
+    's s b b b b n'
+    's s b b b b n'
+    's s b b b b n'
+    's s b b b b n'
+    's s f f f f n'
+    ;
+    }
+    
+    #container>div{
+        border-style:double ;
+        border-width: 3px;
+        border-color: gold;
+        text-align: center;
+    }
+    
+    #m{
+        grid-area: m;
+        background-color: aquamarine;
+    }
+    #s{
+        grid-area: s;
+    background-color: brown;
+    }
+    #n{
+        grid-area: n;
+    background-color: blue;
+    }
+    #f{
+        grid-area: f;
+        background-color: blueviolet;
+    }
+    #b{
+        grid-area: b;
+        background-color: chartreuse;
+    }

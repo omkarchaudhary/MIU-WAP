@@ -1,0 +1,57 @@
+weekend
+
+nodejs
+
+setTimeout(()=>{
+let x=5;
+let y=8;
+console.log(x+y);
+},5000); // prints 13 after 5 sec
+.........................
+simple module Eg.
+
+myClasses.js
+let x=12;
+module.exports= x;
+
+test.js
+const valueOfX= require('./myClasses');
+console.log(valueOfX); //12
+.........................................
+myClasses.js
+
+let c=class Car{
+    make;
+    model;
+    constructor(make,model){
+        this.make=make;
+        this.model=model;
+    }
+    getMake(){
+        return this.make;
+    }
+    getModel(){
+        return this.model;
+    }
+}
+
+let y=55;
+
+let myObj={
+    myCar: c,
+    myY: y,
+    myF: function(){
+        return "This is my function";
+    }
+}
+module.exports= myObj;
+
+test.js
+-------
+const valueOfX= require('./myClasses.js')
+console.log(valueOfX.myY) //55
+
+let tesla=new valueOfX.myCar("tesla", "model 3");
+console.log("This is a " +tesla.getMake() + ", " + tesla.getModel()) //tesla, model 3
+
+console.log(valueOfX.myF()) //This is my function
